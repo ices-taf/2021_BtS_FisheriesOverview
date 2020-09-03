@@ -1,0 +1,1151 @@
+---
+output:
+  html_document:
+    keep_md: true
+    fig_height: 1
+    fig_width: 1
+    toc: yes
+    toc_depth: 3
+    toc_float: 
+        collapsed: true
+---
+<style>
+#TOC {
+  background:url("http://www.ices.dk/_layouts/15/1033/images/icesimg/iceslogo.png") ;
+  background-size: contain;
+  padding-top: 100px !important;
+  background-repeat: no-repeat;
+  position: fixed;
+  font-size: 12px;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 80%;
+  overflow:auto;
+}
+</style>
+
+
+---
+title: "Baltic Sea ecoregion – Fisheries overview"
+author: "ICES"
+date: "September 2020"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+#<a href="#top">Back to top</a>
+```
+
+[https://doi.org/10.17895/ices.pub.4648](http://www.ices.dk/sites/pub/Publication%20Reports/Forms/DispForm.aspx?ID=35069)
+
+
+***
+
+[See PDF version](http://www.ices.dk/sites/pub/Publication%20Reports/Advice/2018/2018/BalticSeaEcoregion_FisheriesOverviews_2018_November.pdf)  
+[See this in the ICES Spatial facility](http://gis.ices.dk/sf/index.html?widget=visa&assessmentKey=9467)
+
+***
+
+# Executive summary
+
+The commercial fisheries in the Baltic Sea target only a few stocks. The pelagic fisheries, which account for the largest catches (by weight) in the region are the mid-water trawl fisheries for sprat and for herring. The most important demersal fisheries are the bottom-trawl fisheries for cod and flatfish. The demersal fisheries are concentrated in the south and west of the Baltic Sea, while the pelagic fisheries are more widespread. Basin-wide, commercial fishing effort has declined in recent years. Recreational fisheries in the Baltic catch a diversity of species, with cod and salmon accounting for the largest number of landings. Most of the Baltic Sea fish stocks with reference points are fished at or below FMSY. Multispecies analysis indicates that there is a trade-off between fishing on cod, or on herring and sprat in the central Baltic Sea. Patterns of seabed habitat disturbance largely reflect the distribution of bottom-trawl fishing effort. A large and, for some species, probably unsustainable bycatch of seabirds occurs at times in the gillnet fisheries; these fisheries also catch individuals of the critically endangered Central Baltic population of harbour porpoise.
+
+ <br> 
+
+***
+
+# Introduction
+
+The Baltic Sea is a shallow, semi-enclosed, brackish sea, characterised by vertical stratification of the water column (Figure 1). Salty, well oxygenated water from the North Sea occasionally enters the Baltic Sea through the Belt Seas and propagates into the deeper areas, while freshwater flows exit at the surface. Stratification limits the oxygen from reaching the deeper waters and hence the oxygen content of the bottom water depends on surface oxygen consumption and the inflows of North Sea water. Due to these hydrological characteristics, the basin has a limited diversity of fish species, dominated by marine species in the southwestern areas and a combination of marine and freshwater species in the northeastern areas. Fisheries in the Baltic Sea are focused on a few major species.
+
+
+```{r  out.width = "100%", echo=FALSE}
+knitr::include_graphics("report/2020_BtS_FO_Map.png")
+```
+
+**Figure 1**  The Baltic Sea ecoregion (highlighted in yellow). ICES Subdivision 23 is usually defined as part of the Greater North Sea ecoregion, but to be consistent with the current fisheries management regime, it is included in this overview.
+
+<br>
+
+<a href="Data/BtS_figure1.png" download>Download image</a>
+
+<br>
+
+The overview covers ICES Subarea 27.3, excluding Division 27.3.a (hereafter, the area prefixes are omitted), and provides:
+
+*	a short description of each of the national fishing fleets in the ecoregion, including their commercial and recreational fisheries and fishing gears and patterns;
+*	a summary of the status of the fisheries resources and the level of exploitation relative to agreed objectives and reference points;
+*	an examination of mixed-fisheries considerations of relevance to the management of the fisheries; and
+*	an evaluation of impacts of fishing gear on the ecosystem in terms of physical contact on subsurface and bottom habitats, and on the bycatch of protected species.
+
+
+
+
+# Who is fishing
+
+Fishing vessels from nine nations operate in the Baltic Sea, with the highest number of large vessels (>12 m) coming from Sweden, Denmark, and Poland. Total finfish landings from the Baltic Sea peaked in the mid-1970s and again in the mid-1990s, corresponding to peaks in the abundance of cod and sprat stocks respectively. The proportion of the total annual landings caught by each country has varied little over time, except for the redistribution of catches by former USSR countries (Figure 2). Total fishing effort has declined since 2003 (Figure 3). The following country paragraphs highlight features of the fleets and fisheries of each country and are not exhaustive descriptions.
+
+## Denmark
+
+The Danish fleet comprises close to 350 vessels divided into offshore fisheries (approximately 100 vessels 8–12 m and 80 vessels >12 m) and coastal fisheries (approximately 150 vessels). The large-vessel offshore fisheries target (a) sprat and herring in the northern Baltic Sea using small-meshed pelagic trawls, and (b) cod and plaice in the southwestern Baltic fisheries using demersal trawls. In the western Baltic Sea, a flatfish fishery exists targeting plaice which also catches turbot, dab, flounder, and brill. The coastal fisheries target species such as eel, flatfishes, and cod using mainly trapnets, poundnets, and gillnets and are prosecuted off all coasts and in the Belt area. Recreational fisheries target different species depending on the season, with cod, salmon, and trout being among the most important species. For cod, the main fishing area is the Sound (Subdivision 23), while most of the recreational salmon fishery takes place from the island of Bornholm in subdivisions 24 and 25.
+
+## Estonia
+
+The active offshore fleet comprises around 30 fishing vessels (17–42 m), while the coastal fishery consists of several hundred small vessels of < 12 m. The pelagic fleet consists of stern trawlers mainly targeting herring and sprat in subdivisions 28.1, 28.2, 29, and 32. Trawlers also catch cod in subdivisions 25 and 26. About 25–30% of the herring catch is taken in coastal fisheries, mainly in the Gulf of Riga (Subdivision 28.1) and the Gulf of Finland (Subdivision 32) using trapnets and poundnets. Flounder is also taken (using Danish seines and gillnets) in the coastal fisheries in the Gulf of Riga and subdivisions 29 and 32. Recreational fisheries primarily target perch, pikeperch, flounder, and whitefish, mainly in the Gulf of Riga.
+
+## Finland
+
+The fleet comprises around 3200 vessels, of which almost 1500 vessels are actively used in the fishery. The vast majority of the vessels are < 12 m and operate in coastal fisheries. The offshore fleet is composed of 64 vessels between 12 and 40 m in the Baltic main basin, the Archipelago Sea, the Gulf of Bothnia, and the Gulf of Finland and mainly targets Baltic herring stocks (with sprat taken mainly as bycatch) with pelagic trawls. Occasionally, offshore vessels will fish for cod using bottom trawls in the southern Baltic. The coastal fisheries occur from all parts of the coast, using trapnets, fykenets, and gillnets, and catching salmon, whitefish, pikeperch, perch, pike, vendace, burbot, and occasionally flounder and turbot. Recreational fisheries target mainly perch, pike, pikeperch, whitefish, bream, and herring, using gillnets, rods, fish traps, and fykenets along the coast of Gulf of Finland and in the Archipelago Sea and Gulf of Bothnia.
+
+## Germany
+
+The German commercial fleet in the Baltic Sea consists of about 60 trawlers and larger (>10 m total length) polyvalent vessels, and about 650 vessels using exclusively passive gear (< 12 m total length). The German herring fleet in the Baltic Sea, where all catches are taken in a directed fishery, consists of a coastal fleet with mostly undecked boats (rowing/motor boats ≤ 12 m) and a cutter fleet with decked vessels (total length 12–40 m). The German herring fishery in the Baltic Sea is conducted with gillnets, trapnets, and trawls; passive and active gears now share the landings about 50:50. Herring are fished mostly in the spring spawning season, and mainly in Subdivision 24. In the central Baltic Sea, almost all landings are taken by the trawl fishery. All catches of sprat are taken in a directed trawl fishery by cutters >12 m in length. Most sprat is caught in subdivisions 25–29 in the first quarter. Demersal species are caught with bottom trawls and passive gears, particularly gillnets but also trammelnets. There are major targeted fisheries for cod and flounder (subdivisions 22, 24, 25; active, passive; year-round except peak summer months), plaice (Subdivision 22; active, passive; fourth/first quarter), dab (Subdivision 22; active; fourth quarter), turbot (Subdivision 24; gillnet, second quarter), and whiting (Subdivision 22; active, first/second quarter). Freshwater species are mainly targeted by passive gear fishers in coastal lagoons and river mouths. Recreational fisheries are carried out by an estimated 161 000 fishers, from all German shores and from boats (charter and private boats) mostly within 5 nautical miles (NM) of the coast. The main target species are cod, herring, sea trout, salmon, whiting, and flatfish.
+
+## Latvia
+
+The fleet comprises around 55 registered offshore vessels (12–40 m) and 610 coastal vessels (< 12 m). The offshore vessels target sprat in the Baltic main basin and herring in the Gulf of Riga using pelagic trawls, and cod and flounder in subdivisions 25 and 26 using demersal trawls. Since 2000, sprat and herring have accounted for 92% of the total annual landings. Most vessels in the coastal fleet are < 5 m and target herring, smelt, round goby, salmon, sea trout, vimba bream, turbot, eelpout, flounder, and cod using fykenets, trapnets, and gillnets. Recreational fisheries occur on all coasts and target flounder, cod, perch, and round goby.
+
+## Lithuania
+
+The Lithuanian fishing fleet in 2018 comprised 21 offshore vessels (>18 m) and 59 coastal vessels (< 12 m). The offshore fishing fleet uses pelagic and bottom trawls, with vessels switching between gears depending on target species, fishing conditions, and quota availability. The main target species sprat, herring, cod, and flounder are caught mainly in subdivisions 25, 26, and 28 and to a lesser extent in subdivisions 27 and 29. The coastal fisheries target herring, smelt, flounder, turbot, and cod using gillnets and trapnets within the Lithuanian coastal area of Subdivision 26. Recreational fisheries also occur in these waters and focus on cod, herring, salmon, and sea trout using hooks and trolls.
+
+## Poland
+
+The fishing fleet consists of around 150 active offshore vessels (12–35 m) and approximately 500 coastal vessels (< 12 m). The larger offshore vessels (>18.5 m) target sprat and herring using pelagic trawls for fishing sprat and herring, while smaller offshore vessels (12–18.5 m) target cod, flounder, and sandeel using bottom trawls. Fishing occurs mainly in subdivisions 24, 25, and 26 and these species form about 97% of the total annual landings. The coastal fisheries harvest salmon, sea trout, turbot, plaice, eel, roach, perch, bream, pikeperch, whiting, whitefish, razorfish, crucian carp, and garfish. Recreational fisheries mostly target cod and salmon primarily along the central Polish coast and off the Hel Peninsula.
+
+## Russia
+
+The fishing fleet is composed of 53 vessels, divided into offshore fisheries (44 vessels in the 25–31 m size class) and coastal fisheries (nine vessels in the 15–25 m size class). In subdivision 26 the small-vessel MRTK fleet targets sprat and herring, while the demersal trawl fleet (< 27 m) targets cod and flounder. The gillnet fleet targets cod, with flounder as bycatch. A poundnet fishery targeting herring occurs in the Vistula Lagoon. In the eastern part of the Gulf of Finland (Subdivision 32), the MRTK fleet operates mainly in the 1st, 2nd, and 4th quarters and is orientated toward herring. Recreational fisheries targeting cod, flounder, turbot, salmon, round goby, and other non-commercial species occur on all Russian coasts.
+
+## Sweden
+
+The fleet is comprised of around 20 offshore vessels (around 10 vessels >40 m) and around 550 coastal vessels (the vast majority < 12 m). The offshore fleet mostly targets herring and sprat using pelagic trawls in the main basin of the Baltic Sea, but also uses bottom trawls to fish for cod in the southern Baltic. Coastal fisheries use a mix of gillnets, longlines, and fish traps to catch flatfishes and cod as well as a variety of freshwater species (in the archipelagic areas) and herring, whitefish, and salmon in the Bothnian Bay. A coastal fishery using fykenets targets eel and other species along the southeastern coast. Along the eastern Swedish coast, trawl fisheries target herring and sprat. Recreational fisheries take place along the entire Baltic Sea coast and target marine and freshwater species, including cod, salmon, northern pike, perch, and sea trout.
+
+
+```{r catchbycountry, echo=FALSE, message = FALSE, warning=FALSE,fig.height = 4.5, fig.width = 8}
+library(plotly)
+library(ggplot2)
+library(dplyr)
+dat <- read.csv("report/2020_BtS_FO_Catches_country.csv")
+names <- unique(dat$type_var)
+colList <- ggthemes::tableau_color_pal('Tableau 20')(10)
+order <- dat %>%
+                group_by(type_var) %>%
+                summarize(total = sum(typeTotal, na.rm = TRUE)) %>%
+                arrange(-total) %>%
+                ungroup() %>%
+                mutate(type_var = factor(type_var, type_var))
+        
+dat$type_var <- factor(dat$type_var,
+                        levels = order$type_var[order(order$total)])
+        
+myColors <- colList[1:length(unique(dat$type_var))]
+names(myColors) <- levels(dat$type_var)
+myColors["other"] <- "#7F7F7F"
+# dat <- dplyr::rename(dat, "Landings (thousand tonnes)" = "typeTotal")
+pl <- ggplot(ungroup(dat), aes(x = YEAR, y = typeTotal)) +
+                scale_fill_manual(values = myColors) +
+                scale_color_manual(values = myColors) +
+                scale_x_continuous(breaks = seq(min(dat$YEAR),
+                                                max(dat$YEAR), by = 10)) +
+                geom_segment(aes(x = -Inf, xend = max(dat$YEAR), y = -Inf, yend = -Inf), color = "grey50")+
+                geom_segment(aes(y = -Inf, yend = Inf, x = -Inf, xend = -Inf), color = "grey50")+
+         theme_bw(base_size = 9) +
+                theme(plot.caption = element_text(size = 6),
+                      panel.grid.minor = element_blank(),
+                      panel.grid.major = element_blank(),
+                      panel.border = element_blank(),
+                      axis.line = element_blank())+
+        geom_area(aes(fill = type_var, color = type_var),
+                                     alpha = .8,
+                                     position = "stack")
+                
+plot <- ggplotly(pl)
+plot
+
+```
+<br>
+
+**Figure 2**  Landings (thousand tonnes) from the Baltic Sea in 1950–2019, by (current) country. The nine countries having the highest landings are displayed separately and the remaining countries are aggregated and displayed as “other”.
+
+<br>
+
+<a href="report/2020_BtS_FO_Catches_country.png" download>Download image</a>
+
+<br>
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName1"> Show/Download Table </button>  
+<div id="BlockName1" class="collapse"> 
+<br>
+```{r download1, echo=FALSE, message=FALSE, warning= FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_Catches_country.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r DATcatchby_country, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(dat, file = "report/2020_BtS_FO_Catches_country.csv")
+kable(dat, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+[Go to Top](#top)
+
+
+```{r effortbycountry, echo=FALSE, message = FALSE, warning=FALSE,fig.height = 4.5, fig.width = 8}
+library(plotly)
+library(ggplot2)
+library(dplyr)
+dat <- read.csv("report/2020_BtS_FO_STECF_effortCountry.csv")
+names <- unique(dat$type_var)
+colList <- ggthemes::tableau_color_pal('Tableau 20')(10)
+myColors <- colList[1:length(unique(dat$type_var))]
+names(myColors) <- levels(dat$type_var)
+myColors["other"] <- "#7F7F7F"
+pl <- ggplot(ungroup(dat), aes(x = year, y = typeTotal)) +
+                scale_fill_manual(values = myColors) +
+                scale_color_manual(values = myColors) +
+                scale_x_continuous(breaks = seq(min(dat$year),
+                                                max(dat$year), by = 2)) +
+                geom_segment(aes(x = -Inf, xend = max(dat$year), y = -Inf, yend = -Inf), color = "grey50")+
+                geom_segment(aes(y = -Inf, yend = Inf, x = -Inf, xend = -Inf), color = "grey50")+
+         theme_bw(base_size = 9) +
+                theme(plot.caption = element_text(size = 6),
+                      panel.grid.minor = element_blank(),
+                      panel.grid.major = element_blank(),
+                      panel.border = element_blank(),
+                      axis.line = element_blank())+
+        geom_line(aes(fill = type_var, color = type_var),
+                                     alpha = .8,
+                                     position = "identity")
+                
+
+
+plot <- ggplotly(pl)
+plot
+
+```
+<br>
+
+**Figure 3**  Baltic Sea fishing effort (thousand kW days at sea) in 2015–2018, by EU nation. There is uncertainty about the effort data available for Finland and Estonia, so fishing effort for these two countries have been omitted from the figure.
+
+<a href="report/2020_BtS_FO_STECF_effortCountry.png" download>Download image</a>
+
+<br>
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName2"> Show/Download Table </button>  
+<div id="BlockName2" class="collapse"> 
+<br>
+```{r download2, echo=FALSE, message=FALSE, warning= FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_STECF_effortCountry.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r DATeffortby_country, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(dat, file = "report/2020_BtS_FO_STECF_effortCountry.csv")
+kable(dat, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+[Go to Top](#top)
+
+
+
+***
+
+# Catches over time
+
+Species caught in the fisheries are either landed or discarded. Landings and discards are considered separately below. Data on landings have been collected consistently for many years, whereas information on discards has only been consistently collected in the most recent years.
+
+The principal species targeted in the commercial fisheries are cod, herring, and sprat, which together constitute about 95% of the total catch. The fisheries for cod in the Baltic use mainly demersal trawls and gillnets, while herring and sprat are mainly caught by pelagic trawls. Other target fish species having local economic importance are salmon, plaice, flounder, dab, brill, turbot, pikeperch, pike, perch, vendace, whitefish, turbot, eel, and sea trout.
+
+<br> 
+
+## Landings
+
+Since the early 1950s, landings of herring and sprat from the pelagic fisheries have dominated the total landings of fish from the Baltic Sea (Figures 4 and 5) which peaked at more than 1.2 million tonnes in the mid-1970s. A decrease in sprat abundance, followed by a decline in cod in the late 1980s, led to a marked decline in total landings. Pelagic landings increased in the early and mid-1990s, reflecting an increase in sprat abundance during this period. Since 2003, total Baltic Sea landings have remained fairly stable (Figure 6).
+
+Recreational catches are included in ICES assessments of the western Baltic cod and the Baltic salmon stocks. Estimated annual recreational catch of western cod has been relatively stable at around 2500 tonnes (only German data available), while estimated annual recreational catches of salmon have been more variable. There may also be significant recreational catches of sea trout, but these have yet to be quantitatively evaluated or included in the stock assessment. Recreational fishery surveys have been conducted in the Baltic; however, only few data for other species are available and these have not been used in assessments for the whole Baltic Sea.
+
+
+```{r catchbyguild, echo=FALSE, message=FALSE,warning= FALSE,fig.height = 4.5, fig.width = 8}
+library(plotly)
+dat <- read.csv("report/2020_BtS_FO_Catches_guild.csv")
+names <- unique(dat$type_var)
+p <- plot_ly(data = dat,
+         x = ~YEAR,
+         y = ~typeTotal,
+         color = ~type_var,
+         type = "scatter",
+         mode = "lines") %>%
+        layout(hovermode="TRUE", showlegend = TRUE)
+p
+
+```
+<br>
+
+**Figure 4**  Landings (thousand tonnes)  from the Baltic Sea in 1950–2019, by fish category. Table 1 in the Annex details which species belong to each fish category.
+<br>
+
+<a href="report/2020_BtS_FO_Catches_guild.png" download>Download image</a>
+
+<br>
+
+
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName3"> Show/Download Table </button>  
+<div id="BlockName3" class="collapse"> 
+<br>
+```{r download3, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_Catches_guild.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r DATcatchby_guild, echo=FALSE, message=FALSE, warning= FALSE}
+library(kableExtra)
+write.csv(dat, file = "report/2020_BtS_FO_Catches_guild.csv")
+kable(dat, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+```{r catchbyname, echo=FALSE, message= FALSE, warning=FALSE,fig.height = 4.5, fig.width = 8}
+library(plotly)
+dat <- read.csv("report/2020_BtS_FO_Catches_species.csv")
+names <- unique(dat$type_var)
+p <- plot_ly(data = dat,
+         x = ~YEAR,
+         y = ~typeTotal,
+         color = ~type_var,
+         type = "scatter",
+         mode = "lines") %>%
+        layout(hovermode="TRUE", showlegend = TRUE)
+p
+
+```
+<br>
+
+**Figure 5**  Landings (thousand tonnes) from  the Baltic Sea in 1950–2019, by species. The five species having the highest landings are displayed separately; the remaining species are aggregated and labelled as “other”. The “undefined finfish” category is due to inadequate reporting in early years.
+<br>
+
+<a href="report/2020_BtS_FO_Catches_species.png" download>Download image</a>
+
+<br>
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName4"> Show/Download Table </button>  
+<div id="BlockName4" class="collapse"> 
+<br>
+```{r download4, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_Catches_species.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r DATcatchby_name, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(dat, file = "report/2020_BtS_FO_Catches_species.csv")
+kable(dat, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+
+```{r landingsbygear, echo=FALSE, message = FALSE, warning=FALSE,fig.height = 4.5, fig.width = 8}
+library(plotly)
+library(ggplot2)
+library(dplyr)
+dat <- read.csv("report/2020_BtS_FO_STECF_landings.csv")
+names <- unique(dat$type_var)
+colList <- ggthemes::tableau_color_pal('Tableau 20')(10)
+myColors <- colList[1:length(unique(dat$type_var))]
+names(myColors) <- levels(dat$type_var)
+myColors["other"] <- "#7F7F7F"
+pl <- ggplot(ungroup(dat), aes(x = year, y = typeTotal)) +
+                scale_fill_manual(values = myColors) +
+                scale_color_manual(values = myColors) +
+                scale_x_continuous(breaks = seq(min(dat$year),
+                                                max(dat$year), by = 2)) +
+                geom_segment(aes(x = -Inf, xend = max(dat$year), y = -Inf, yend = -Inf), color = "grey50")+
+                geom_segment(aes(y = -Inf, yend = Inf, x = -Inf, xend = -Inf), color = "grey50")+
+         theme_bw(base_size = 9) +
+                theme(plot.caption = element_text(size = 6),
+                      panel.grid.minor = element_blank(),
+                      panel.grid.major = element_blank(),
+                      panel.border = element_blank(),
+                      axis.line = element_blank())+
+        geom_line(aes(fill = type_var, color = type_var),
+                                     alpha = .8,
+                                     position = "identity")
+                
+
+
+plot <- ggplotly(pl)
+plot
+
+```
+<br>
+
+
+
+**Figure 6** Commercial landings (thousand tonnes) from the Baltic Sea in 2015–2018, by gear type (LL = longline). There is an error in the STECF database in 2013 for one country for pots and static gear; the landings from this gear by this country are omitted from the figure.
+<br>
+
+<a href="report/2020_BtS_FO_STECF_landings.png" download>Download image</a>
+
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName5"> Show/Download Table </button>  
+<div id="BlockName5" class="collapse"> 
+<br>
+```{r download5, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_STECF_landings.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r DATlandingsbygear, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(dat, file = "report/2020_BtS_FO_STECF_landings.csv")
+kable(dat, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+
+## Discards
+
+Discards for pelagic species in the Baltic Sea are very low, as both sprat and herring are target species (Figure 7) and other bycatch (e.g. of sticklebacks) is also landed. The discard rates are minor for static coastal gears and even lower for pelagic trawls. A rise in benthic discard rates in 2014 is due to the inclusion of flounder stocks in the evaluation, which significantly increased the number of stocks assessed for discards (from four to seven stocks). Demersal discards show a nominal overall decrease in 2015 because of the obligation to land all commercial catches of cod, salmon, herring, and sprat in the Baltic Sea that came into force in 2015. Release rates for species targeted by recreational fisheries are available for most target species and are high, but vary between years and countries. Post-release mortality estimates are available only for some species; further studies are needed.
+
+<table style="table-layout: fixed;width: 100%;">
+<tr>
+<td>
+```{r discards_trends, echo=FALSE, fig.height=4.5, fig.width=, message=FALSE, warning=FALSE}
+# wrong, need to check data
+library(plotly)
+library(tidyr)
+dat <- read.csv("report/2020_BtS_FO_SAG_Discards_current.csv")
+names <- unique(dat$type_var)
+dat <- spread(dat, variable, value)
+p <- plot_ly(data = dat,
+         x = ~FisheriesGuild)%>%
+        add_trace(y=~guildLandings, name = 'Landings')%>%
+        add_trace(y= ~guildDiscards, name = 'Discards')%>%
+        layout(yaxis = list(title = 'Thousand tonnes)'), barmode = 'stack') 
+
+p
+
+```
+</td>
+<td>
+```{r discard_current, eval=FALSE, fig.height=4.5, fig.width=, message=FALSE, warning=FALSE, include=FALSE}
+library(plotly)
+library(tidyr)
+dat <- read.csv("report/2020_BtS_FO_SAG_Discards_current.csv")
+names <- unique(dat$type_var)
+dat <- spread(dat, variable, value)
+p <- plot_ly(data = dat,
+         x = ~FisheriesGuild)%>%
+        add_trace(y=~guildLandings, name = 'Landings')%>%
+        add_trace(y= ~guildDiscards, name = 'Discards')%>%
+        layout(yaxis = list(title = 'Thousand tonnes)'), barmode = 'stack') 
+
+p
+
+```
+</td>
+</tr>
+</table>
+
+<br>
+
+**Figure 7** Left panel (a): Discard rates in 2013–2017 by fish category, shown as percentages (%) of the total annual catch in that category. Right panel (b): Landings (green) and discards (orange) in 2019 by fish category (in thousand tonnes).
+<br>
+
+<a href="report/2020_BtS_FO_SAG_Discards.png" download>Download image</a>
+
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName6"> Show/Download Table </button>  
+<div id="BlockName6" class="collapse"> 
+<br>
+```{r download6, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_SAG_Discards_trends.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r DATdiscard_rate, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(dat, file = "report/2020_BtS_FO_SAG_Discards_trends.csv")
+kable(dat, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+***
+
+# Description of the fisheries
+
+The principal species targeted in the commercial fishery are cod, herring, and sprat, which constitute about 95% of the total catch. Other target fish species having local economic importance are salmon, plaice, dab, brill, turbot, flounder, pikeperch, pike, perch, vendace, whitefish, turbot, eel, and sea trout.
+
+Bottom trawls are the main gear used in Baltic demersal fisheries, while mid-water trawls are the main gear in the pelagic fisheries. Demersal fishing effort has substantially declined since 2004 (Figure 8).
+
+
+```{r effortbygear, echo=FALSE, message = FALSE, warning=FALSE,fig.height = 4.5, fig.width = 8}
+library(plotly)
+library(ggplot2)
+library(dplyr)
+dat <- read.csv("report/2020_BtS_FO_STECF_effortGear.csv")
+names <- unique(dat$type_var)
+colList <- ggthemes::tableau_color_pal('Tableau 20')(10)
+myColors <- colList[1:length(unique(dat$type_var))]
+names(myColors) <- levels(dat$type_var)
+myColors["other"] <- "#7F7F7F"
+pl <- ggplot(ungroup(dat), aes(x = year, y = typeTotal)) +
+                scale_fill_manual(values = myColors) +
+                scale_color_manual(values = myColors) +
+                scale_x_continuous(breaks = seq(min(dat$year),
+                                                max(dat$year), by = 2)) +
+                geom_segment(aes(x = -Inf, xend = max(dat$year), y = -Inf, yend = -Inf), color = "grey50")+
+                geom_segment(aes(y = -Inf, yend = Inf, x = -Inf, xend = -Inf), color = "grey50")+
+         theme_bw(base_size = 9) +
+                theme(plot.caption = element_text(size = 6),
+                      panel.grid.minor = element_blank(),
+                      panel.grid.major = element_blank(),
+                      panel.border = element_blank(),
+                      axis.line = element_blank())+
+        geom_line(aes(fill = type_var, color = type_var),
+                                     alpha = .8,
+                                     position = "identity")
+                
+
+
+plot <- ggplotly(pl)
+plot
+
+```
+<br>
+
+
+
+**Figure 8** Baltic Sea fishing effort (thousand kW days at sea) in 2015–2018 by EU vessels (except those of Finland and Estonia, see Figure 3), by gear type.
+<br>
+
+<a href="report/2020_BtS_FO_STECF_effortGear.png" download>Download image</a>
+
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName7"> Show/Download Table </button>  
+<div id="BlockName7" class="collapse"> 
+<br>
+```{r download7, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_STECF_effortGear.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r DATeffortbygear, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(dat, file = "report/2020_BtS_FO_STECF_effortGear.csv")
+kable(dat, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+The spatial distribution of fishing effort by different gear types is shown in Figure 9. These maps show the distribution of effort by vessels >12 m carrying Vessel Monitoring Systems (VMS). The substantial effort undertaken also by vessels < 12 m is therefore not included.
+
+```{r  out.width = "100%", echo=FALSE}
+knitr::include_graphics("report/2020_BtS_FO_VMS_effort.png")
+```
+
+
+**Figure 9** Spatial distribution of average annual fishing effort (mW fishing hours) in the Baltic Sea during 2014–2019, by gear type. Fishing effort data are only shown for vessels >12 m having vessel monitoring systems (VMS).
+<br>
+
+<a href="report/2020_BtS_FO_VMS_effort.png" download>Download image</a>
+
+<br> 
+<br>
+
+## Bottom trawl and seine
+
+Bottom trawl is the most common gear in the southwestern part of the region, being intensively used by all countries. Cod is typically the main target species with flatfish as bycatch; however, in certain time periods and areas, demersal trawlers may target flatfish. To a minor extent, small-meshed bottom trawls are used for catching herring and sprat. The bottom trawls used in the cod and flatfish fisheries are subject to detailed design and mesh size rules. Demersal seines are also used in the southwestern Baltic Sea. Beam trawls are generally not used in the Baltic Sea.
+<br>
+
+## Dredge
+
+Dredge fisheries target blue mussels in Subdivision 22.
+<br>
+
+## Gillnet
+
+Set gillnets are widely used in the Baltic Sea, both in offshore fisheries targeting cod, flatfish, and herring and in coastal fisheries exploiting a large variety of species, including cod, flatfish, herring, whitefish, pikeperch, perch, and pike. Drifting gillnets have been banned in the Baltic Sea since 2008.
+<br>
+
+## Longline
+
+Longline fisheries target cod, salmon, and sea trout in the western and central Baltic Sea, and eel in coastal areas. Following the ban on driftnets, longlines have become the most important gear in the offshore salmon fishery.
+<br>
+
+## Pelagic trawl and seine
+
+Pelagic trawl and seine fisheries operate in all parts of the Baltic Sea, targeting herring and sprat. The catch of each species varies with season and area. Catches are used for human consumption as well as fishmeal and oil production.
+<br>
+
+## Trapnets and fykenets
+
+The trapnet fishery includes a variety of trap types for herring, salmon, whitefish, eel, and other freshwater species. Fisheries are conducted near the coast and inside archipelagos. The trap fishery for herring operates primarily during the spawning season in spring and early summer. Trapnets are used to target salmon on their spawning migration. In the northern and central Baltic Sea most trapnets and fykenets are equipped with seal exclusion devices.
+<br>
+
+## Recreational fisheries
+
+Recreational fisheries take place in all parts of the Baltic Sea, using a variety of gears including rod and line, longline, gillnets, traps, and spear-fishing. Recreational fisheries catch the same species as the commercial fisheries but also several other species. For most of the stocks, recreational catches are neither evaluated nor included in the stock assessments. However, for the salmon and western Baltic cod stocks, recreational catches are significant and are included in the ICES assessments of the stocks. Very few countries have assessed the numbers of recreational fishers.
+
+<br>
+
+# Fisheries management
+
+Baltic Sea fisheries management is under the EU’s Common Fisheries Policy (CFP) and Russian legislation. The EU fisheries management includes input from the Regional Baltic Sea Fisheries Forum (BALTFISH) and the Baltic Sea Advisory Council. Coastal fisheries are managed nationally. Fisheries advice is provided by the International Council for the Exploration of the Sea (ICES) and the European Commission’s Scientific Technical and Economic Committee for Fisheries (STECF).
+
+Cod, herring, sprat, salmon, and plaice fisheries are managed using TACs. Technical measures such as restrictions on fishing gear types and specifications to reduce catches of undersized fish are in place for some fisheries. Temporal and spatial closures are implemented to protect spawning cod, salmon, flounder, and plaice, and also to preserve benthic habitats.
+
+In 2016, the EU adopted a multiannual fisheries management plan covering the Baltic Sea fisheries for cod, herring, and sprat. The plan specifies targets and harvest control rules (HCRs) for these stocks and includes management measures to ensure that the stocks of plaice, flounder, turbot, and brill caught as a bycatch in the cod, herring, and sprat fisheries are managed in accordance with CFP objectives. An obligation to land all catch in the cod, salmon, herring, and sprat fisheries in the Baltic Sea was implemented in 2015; a further agreement to include plaice catches in the landings obligations was enacted in 2017.
+
+In 2011, STECF considered that enforcement of the TACs in the Baltic was sufficient to control catches and that, given the relatively limited levels of discards, TACs had been effective in limiting fishing mortalities on the Baltic stocks. Recent estimates of discards in the eastern Baltic cod fishery indicate a minimum of 10% despite the fact that the landing obligation has been in place since 2015. Fishing mortality on western Baltic cod has been much too high in the last 19 years, in spite of a management plan being in place since 2007. Also, a number of flatfish stocks are not regulated by TACs in the Baltic Sea. STECF evaluated the effectiveness of spawning closures in the Baltic in 2011 and concluded that the impact of these measures was unclear. As long as TACs are effective in limiting fishing mortality, STECF concluded that spawning closures have little effect on the overall fishing mortality and therefore might not be required to meet biological objectives. Since then, evidence from elsewhere indicates that spawning closures for cod are beneficial for recruitment (not necessarily for the reduction of fishing mortality, but to improve spawning conditions, for example by avoiding disruption of spawning aggregations). In 2016, STECF evaluated revised spawning closures and concluded that the spatial closure appeared to be greatly beneficial to the western Baltic cod stock. The effectiveness of spatial closures in preserving benthic habitats has not been widely investigated.
+
+STECF also evaluated a number of technical measures, including gear limitations (e.g. mesh sizes), minimum landing size, and maximum bycatch percentages. For cod, STECF concluded that most of these measures have a positive impact on exploitation patterns and therefore a positive impact on the yield-per-recruit. However, the increase of mesh size in Bacoma escape windows from 110 mm to 120 mm in the cod fishery was found to have adverse effects, i.e. increased fishing pressure on larger fish and increased unwanted bycatch of juveniles.
+
+
+<br>
+
+# Status of the fishery resources
+
+Fishing mortalities and spawning stock sizes have been evaluated against maximum sustainable yield (MSY) and precautionary approach (PA) reference points, and the status of these stocks has also been assessed relative to safe biological limits. A small majority of the Baltic stocks that are analytically assessed (ICES stock data category 1) are fished at rates at or above FMSY (Figure 10), also according to the Marine Strategy Framework Directive (MSFD) D3C1 and the Good Environmental Status (GES) boundaries. However, most of the stocks are fished within the D3C2 boundaries that considers the reproductive capacity of the stocks (Figure 11). There are some stocks for which fishing pressure and stock size reference points are not yet available. The MSFD descriptors show that the majority of the landings are from stocks with full reproductive capacity, which is largely driven by landings of sprat and herring in subdivisions 25–29 and 32, excluding the Gulf of Riga (Figure 11). Overall fishing mortality (F) for benthic and pelagic fish stocks has reduced since the early 2000s (Figure 12). A number of stocks are currently being exploited above FMSY, namely eastern and western cod, herring stocks in the central and in the western Baltic, as well as sprat in the Baltic Sea, plaice (Pleuronectes platessa) in subdivisions 21–23, and sole (Solea solea) in subdivisions 20–24. Annex 1 contains a full list of the stocks included in these figures.
+
+<br>
+```{r icesPies, eval=FALSE, fig.height=4.5, fig.width=, message=FALSE, warning=FALSE, include=FALSE}
+library(plotly)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+df <- read.csv("report/2020_BtS_FO_SAG_ICESpies.csv")
+
+benthic <- df%>% filter(FisheriesGuild == "Benthic")
+benthic <- spread(benthic, header, value)
+colnames(benthic) <- c("X","FisheriesGuild","lineDescription","Variable",             "colour" ,"sum" ,"fraction","FishingPressureMSY", "FishingPressurePA", "SBL",                "StockSizeMSY","StockSizePA")
+pelagic <- df%>% filter(FisheriesGuild == "Pelagic")
+pelagic <- spread(pelagic, header, value)
+colnames(pelagic) <- c("X","FisheriesGuild","lineDescription","Variable",             "colour" ,"sum" ,"fraction","FishingPressureMSY", "FishingPressurePA", "SBL",                "StockSizeMSY","StockSizePA")
+demersal <- df%>% filter(FisheriesGuild == "Demersal")
+demersal <- spread(demersal, header, value)
+colnames(demersal) <- c("X","FisheriesGuild","lineDescription","Variable",             "colour" ,"sum" ,"fraction","FishingPressureMSY", "FishingPressurePA", "SBL",                "StockSizeMSY","StockSizePA")
+total <- df%>% filter(FisheriesGuild == "total")
+total <- spread(total, header, value)
+colnames(total) <- c("X","FisheriesGuild","lineDescription","Variable",             "colour" ,"sum" ,"fraction","FishingPressureMSY", "FishingPressurePA", "SBL",                "StockSizeMSY","StockSizePA")
+
+
+p <- plot_ly() %>%
+  add_pie(data = count(benthic,FishingPressureMSY),labels = ~benthic$colour, values = ~benthic$FishingPressureMSY, name = "FishingPressureMSY", domain = list(row = 0, column = 0)) %>%
+  add_pie(data = count(benthic, FishingPressurePA), labels = ~benthic$colour, values = ~benthic$FishingPressurePA, name = "FishingPressurePA", domain = list(row = 0, column = 1)) %>%
+  add_pie(data = count(benthic, StockSizeMSY), labels = ~benthic$colour, values = ~benthic$StockSizeMSY,
+          name = "StockSizeMSY", domain = list(row = 0, column = 2)) %>%
+  add_pie(data = count(benthic, StockSizePA), labels = ~benthic$colour, values = ~benthic$StockSizePA,
+          name = "StockSizePA", domain = list(row = 0, column = 3)) %>%
+        add_pie(data = count(benthic, SBL), labels = ~benthic$colour, values = ~benthic$SBL,
+          name = "SBL", domain = list(row = 0, column = 4)) %>%
+        add_pie(data = count(pelagic,FishingPressureMSY),labels = ~pelagic$colour, values = ~pelagic$FishingPressureMSY, name = "FishingPressureMSY", domain = list(row = 1, column = 0)) %>%
+  add_pie(data = count(pelagic, FishingPressurePA), labels = ~pelagic$colour, values = ~pelagic$FishingPressurePA, name = "FishingPressurePA", domain = list(row = 1, column = 1)) %>%
+  add_pie(data = count(pelagic, StockSizeMSY), labels = ~pelagic$colour, values = ~pelagic$StockSizeMSY,
+          name = "StockSizeMSY", domain = list(row = 1, column = 2)) %>%
+  add_pie(data = count(pelagic, StockSizePA), labels = ~pelagic$colour, values = ~pelagic$StockSizePA,
+          name = "StockSizePA", domain = list(row = 1, column = 3)) %>%
+        add_pie(data = count(pelagic, SBL), labels = ~pelagic$colour, values = ~pelagic$SBL,
+          name = "SBL", domain = list(row = 1, column = 4)) %>%
+        add_pie(data = count(demersal,FishingPressureMSY),labels = ~demersal$colour, values = ~demersal$FishingPressureMSY, name = "FishingPressureMSY", domain = list(row = 2, column = 0)) %>%
+  add_pie(data = count(demersal, FishingPressurePA), labels = ~demersal$colour, values = ~demersal$FishingPressurePA, name = "FishingPressurePA", domain = list(row = 2, column = 1)) %>%
+  add_pie(data = count(demersal, StockSizeMSY), labels = ~demersal$colour, values = ~demersal$StockSizeMSY,
+          name = "StockSizeMSY", domain = list(row = 2, column = 2)) %>%
+  add_pie(data = count(demersal, StockSizePA), labels = ~demersal$colour, values = ~demersal$StockSizePA,
+          name = "StockSizePA", domain = list(row = 2, column = 3)) %>%
+        add_pie(data = count(demersal, SBL), labels = ~demersal$colour, values = ~demersal$SBL,
+          name = "SBL", domain = list(row = 2, column = 4)) %>%
+        add_pie(data = count(total,FishingPressureMSY),labels = ~total$colour, values = ~total$FishingPressureMSY, name = "FishingPressureMSY", domain = list(row = 3, column = 0)) %>%
+  add_pie(data = count(total, FishingPressurePA), labels = ~total$colour, values = ~total$FishingPressurePA, name = "FishingPressurePA", domain = list(row = 3, column = 1)) %>%
+  add_pie(data = count(total, StockSizeMSY), labels = ~total$colour, values = ~total$StockSizeMSY,
+          name = "StockSizeMSY", domain = list(row = 3, column = 2)) %>%
+  add_pie(data = count(total, StockSizePA), labels = ~total$colour, values = ~total$StockSizePA,
+          name = "StockSizePA", domain = list(row = 3, column = 3)) %>%
+        add_pie(data = count(total, SBL), labels = ~total$colour, values = ~total$SBL,
+          name = "SBL", domain = list(row = 3, column = 4)) %>%
+  layout(title= "FishingPressureMSY         FishingPressurePA   StockSizeMSY   StockSizePA   SBL", showlegend = F,
+         grid=list(rows=4, columns=5),
+         xaxis = list(showgrid = TRUE, zeroline = FALSE, showticklabels = TRUE),
+         yaxis = list(showgrid = TRUE, zeroline = FALSE, showticklabels = TRUE))
+# ,annotations = list(
+#  list(x = 0.05 , y = 1.1, text = "FishingPressure \nMSY", showarrow = F, xref='paper', yref='paper'),
+#   list(x = 0.25 , y = 1.1, text = "FishingPressure \nPA", showarrow = F, xref='paper', yref='paper'),
+#  list(x = 0.5 , y = 1.1, text = "StockSize \nMSY", showarrow = F, xref='paper', yref='paper'),
+#  list(x = 0.73 , y = 1.1, text = "StockSize \nPA", showarrow = F, xref='paper', yref='paper'),
+#  list(x = 0.92 , y = 1.1, text = "SBL", showarrow = F, xref='paper', yref='paper')))
+
+p
+
+```
+<br>
+
+**Figure 10** Status summary of Baltic Sea stocks in 2019 relative to the ICES maximum sustainable yield (MSY) approach and precautionary approach (PA) (excluding European eel, salmon, and sea trout). Grey represents unknown reference points. For the MSY approach: green represents a stock that is fished below FMSY or the stock size is greater than MSY Btrigger; red represents a stock status that is fished above FMSY or the stock size is lower than MSY Btrigger. For the PA: green represents a stock that is fished at or below Fpa while the stock size is equal to or greater than Bpa; orange represents a stock that is fished between Fpa and Flim or the stock size is between Blim and Bpa; red represents a stock that is fished above Flim or the stock size is less than Blim. Stocks having a fishing mortality below or at Fpa and a stock size above Bpa are defined as being inside safe biological limits. If this condition is not fulfilled the stock is defined as being outside safe biological limits. For stock-specific information, see Table A in Annex 1.
+<br>
+<br>
+
+<a href="report/2020_BtS_FO_SAG_ICESpies.png" download>Download image</a>
+
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName8"> Show/Download Table </button>  
+<div id="BlockName8" class="collapse"> 
+<br>
+```{r download8, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_SAG_ICESpies.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r icespiesDAT, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(df, file = "report/2020_BtS_FO_SAG_ICESpies.csv")
+kable(df, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+
+
+
+**Figure 11** Status summary of Baltic Sea stocks in 2019 relative to the Marine Strategy Framework Directive (MSFD) assessment criteria of the level of pressure of fishing activity (D3C1) and reproductive capacity of the stock (D3C2). Green represents the proportion of stocks fished below FMSY or the stock size is greater than MSY Btrigger, for criteria D3C1 and D3C2. Red represents the proportion of stocks fished above FMSY or where the stock size is lower than MSY Btrigger, for criteria D3C1 and D3C2. Grey represents the proportion of stocks without MSY reference points. For stock-specific information, see Table A in Annex 1.
+
+<br>
+<br>
+
+<a href="report/2020_BtS_FO_SAG_GESpies.png" download>Download image</a>
+
+<br>
+
+**Benthic stocks**
+
+```{r trends_benthic, echo=FALSE, message = FALSE, warning=FALSE,fig.height = 4.5, fig.width = 8}
+library(plotly)
+library(ggplot2)
+library(dplyr)
+df <- read.csv("report/2020_BtS_FO_SAG_Trends_benthic.csv")
+
+plot <- ggplot2::ggplot(df %>% filter(StockKeyLabel != "MEAN"),
+                  ggplot2::aes(x = Year, y = Value,
+                      color = StockKeyLabel,
+                      fill = StockKeyLabel)) +
+                ggplot2::geom_hline(yintercept = 1, col = "grey60") +
+                ggplot2::theme_bw(base_size = 9) +
+                # ggplot2::scale_color_manual(values = values) +
+                # ggplot2::scale_fill_manual(values = values) +
+                ggplot2::scale_x_continuous(breaks = scales::pretty_breaks(n = 5)) +
+                ggplot2::guides(fill = FALSE) +
+                # ggplot2::theme(legend.position = legend_pos,
+                #         strip.text = ggplot2::element_text(size = 9, angle = 0, hjust = 0),
+                #         strip.background = ggplot2::element_blank(),
+                #         strip.placement = "outside",
+                #         panel.grid.major = ggplot2::element_blank(),
+                #         panel.grid.minor = ggplot2::element_blank(),
+                #         legend.key = ggplot2::element_rect(colour = NA),
+                #         legend.title = ggplot2::element_blank(),
+                #         plot.caption = ggplot2::element_text(size = 6)) +
+                # cap_lab +
+                ggplot2::facet_wrap(~ Metric, scales = "free_y", labeller = ggplot2::label_parsed, strip.position = "left", ncol = 1, nrow = 2)
+        plot <- plot + ggplot2::geom_line(data = df,alpha = 0.8)
+        plot <- plot + ggplot2::geom_line(data = df %>% filter(StockKeyLabel == "MEAN"),
+                               alpha = 0.9, size = 1.15)
+
+pl <- ggplotly(plot)
+pl
+
+```
+<br>
+<br>
+
+<a href="report/2020_BtS_FO_SAG_Trends_benthic.png" download>Download image</a>
+
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName11"> Show/Download Table </button>  
+<div id="BlockName11" class="collapse"> 
+<br>
+```{r download11, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_SAG_Trends_benthic.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r benthictrendsDAT, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(df, file = "report/2020_BtS_FO_SAG_Trends_benthic.csv")
+kable(df, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+**Pelagic stocks**
+
+<br>
+
+```{r trends_pelagic, echo=FALSE, message = FALSE, warning=FALSE,fig.height = 4.5, fig.width = 8}
+library(plotly)
+library(ggplot2)
+library(dplyr)
+df <- read.csv("report/2020_BtS_FO_SAG_Trends_pelagic.csv")
+
+plot <- ggplot2::ggplot(df %>% filter(StockKeyLabel != "MEAN"),
+                  ggplot2::aes(x = Year, y = Value,
+                      color = StockKeyLabel,
+                      fill = StockKeyLabel)) +
+                ggplot2::geom_hline(yintercept = 1, col = "grey60") +
+                ggplot2::theme_bw(base_size = 9) +
+                # ggplot2::scale_color_manual(values = values) +
+                # ggplot2::scale_fill_manual(values = values) +
+                ggplot2::scale_x_continuous(breaks = scales::pretty_breaks(n = 5)) +
+                ggplot2::guides(fill = FALSE) +
+                # ggplot2::theme(legend.position = legend_pos,
+                #         strip.text = ggplot2::element_text(size = 9, angle = 0, hjust = 0),
+                #         strip.background = ggplot2::element_blank(),
+                #         strip.placement = "outside",
+                #         panel.grid.major = ggplot2::element_blank(),
+                #         panel.grid.minor = ggplot2::element_blank(),
+                #         legend.key = ggplot2::element_rect(colour = NA),
+                #         legend.title = ggplot2::element_blank(),
+                #         plot.caption = ggplot2::element_text(size = 6)) +
+                # cap_lab +
+                ggplot2::facet_wrap(~ Metric, scales = "free_y", labeller = ggplot2::label_parsed, strip.position = "left", ncol = 1, nrow = 2)
+        plot <- plot + ggplot2::geom_line(data = df,alpha = 0.8)
+        plot <- plot + ggplot2::geom_line(data = df %>% filter(StockKeyLabel == "MEAN"), alpha = 0.9, size = 1.15)
+
+pl <- ggplotly(plot)
+pl
+
+```
+<br>
+<br>
+
+<a href="report/2020_BtS_FO_SAG_Trends_pelagic.png" download>Download image</a>
+
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName12"> Show/Download Table </button>  
+<div id="BlockName12" class="collapse"> 
+<br>
+```{r download12, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_SAG_Trends_pelagic.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r pelagictrendsDAT, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(df, file = "report/2020_BtS_FO_SAG_Trends_pelagic.csv")
+kable(df, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+**Demersal stocks**
+
+<br> 
+
+```{r trends_demersal, echo=FALSE, message = FALSE, warning=FALSE,fig.height = 4.5, fig.width = 8}
+
+library(plotly)
+library(ggplot2)
+library(dplyr)
+df <- read.csv("report/2020_BtS_FO_SAG_Trends_demersal.csv")
+
+plot <- ggplot2::ggplot(df %>% filter(StockKeyLabel != "MEAN"),
+                  ggplot2::aes(x = Year, y = Value,
+                      color = StockKeyLabel,
+                      fill = StockKeyLabel)) +
+                ggplot2::geom_hline(yintercept = 1, col = "grey60") +
+                ggplot2::theme_bw(base_size = 9) +
+                # ggplot2::scale_color_manual(values = values) +
+                # ggplot2::scale_fill_manual(values = values) +
+                ggplot2::scale_x_continuous(breaks = scales::pretty_breaks(n = 5)) +
+                ggplot2::guides(fill = FALSE) +
+                # ggplot2::theme(legend.position = legend_pos,
+                #         strip.text = ggplot2::element_text(size = 9, angle = 0, hjust = 0),
+                #         strip.background = ggplot2::element_blank(),
+                #         strip.placement = "outside",
+                #         panel.grid.major = ggplot2::element_blank(),
+                #         panel.grid.minor = ggplot2::element_blank(),
+                #         legend.key = ggplot2::element_rect(colour = NA),
+                #         legend.title = ggplot2::element_blank(),
+                #         plot.caption = ggplot2::element_text(size = 6)) +
+                # cap_lab +
+                ggplot2::facet_wrap(~ Metric, scales = "free_y", labeller = ggplot2::label_parsed, strip.position = "left", ncol = 1, nrow = 2)
+        plot <- plot + ggplot2::geom_line(data = df,alpha = 0.8)
+        plot <- plot + ggplot2::geom_line(data = df %>% filter(StockKeyLabel == "MEAN"), alpha = 0.9, size = 1.15)
+
+# pl <- ggplotly(plot)
+# pl
+plot
+
+```
+<br>
+<br>
+
+<a href="report/2020_BtS_FO_SAG_Trends_demersal.png" download>Download image</a>
+
+<br>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName13"> Show/Download Table </button>  
+<div id="BlockName13" class="collapse"> 
+<br>
+```{r download13, echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+ readLines("report/2020_BtS_FO_SAG_Trends_demersal.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r demersaltrendsDAT, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+write.csv(df, file = "report/2020_BtS_FO_SAG_Trends_demersal.csv")
+kable(df, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
+</div>
+<br> 
+
+**Figure 12** Temporal trends in F/FMSY and SSB/MSY Btrigger for Baltic Sea pelagic stocks. Only stocks with defined MSY reference points are considered. For full stock names, see Table A in Annex 1.
+
+<br> 
+
+# Mixed fisheries
+
+Many fishing gears catch more than one species at the same time, so “technical interactions” occur between stocks when multiple species are captured in the same gear during fishing operations. Because these interactions may vary through time and space (e.g. interactions might vary between day and night, or between different times of year, or between different areas), it would be ideal for them to be quantified at the scale of the fishing operation. However, most fisheries data, including those submitted to STECF, are aggregated based on species, gear, mesh size range, ICES square, and calendar quarter, which may create perceived interactions that do not occur in real life while more subtle interactions are missed.
+
+ICES has evaluated technical interactions between species captured together in demersal fisheries by examining their co-occurrence in the landings at the scale of the gear, mesh size range, ICES statistical rectangle, and quarter (hereafter called strata). The percentage of landings of species A, where species B is also landed and constitutes more than 5% of the total landings in that stratum, has been computed for each pair of species. Cases in which species B accounts for less than 5% of the total landings in a stratum were ignored.
+
+To illustrate the extent of the technical interactions between pairs of species, a qualitative scale was applied to each interaction (Figure 14). In this figure, the rows represent the share of each species A that was caught in fisheries where species B accounted for at least 5% of the total landings of the fisheries. A high proportion of the catches of herring was for example taken in fisheries where herring landings constituted at least 5% of the total landings, while the amount of herring in fisheries where sprat accounts for at least 5% of the total landings was medium. The amounts of sprat were high in both the fisheries where herring or sprat accounted for at least 5% of the total catch.
+
+The columns illustrate the degree of mixing and can be used to identify the main fisheries. Fisheries where herring (species B) constitute 5% or more of the total landings account for a high share (red cells) of the total landings of herring and sprat, while the amount of herring in the fisheries where sprat constitute at least 5% of the total catch was medium (orange cells).
+
+In the Baltic Sea, cod fisheries often capture flounder (and occasionally take plaice and whiting). Occasional fisheries for flounder frequently harvest cod. The Baltic herring fisheries often land also sprat and vice versa.
+
+<br>
+
+```{r out.width = "100%", echo=FALSE}
+knitr::include_graphics("report/2020_Bts_FO_Figure14.png")
+```
+
+**Figure 14** Technical interactions between the four most important stocks in the Baltic Sea. The rows of the figure illustrate the fisheries where the species A was caught. Red cells indicate the species B which the A species are frequently caught together with. Orange cells indicate medium interactions and yellow cells indicate weak interactions. The columns show the degree of mixing in fisheries where species B accounts for at least 5% of the total landings. A more detailed explaination of the figure is provided in the text.
+<br>
+
+<a href="report/2020_Bts_FO_Figure14.png" download>Download image</a>
+
+<br>
+
+The technical interaction in the Baltic pelagic fishery differs between fisheries. The majority of herring and sprat are caught with pelagic trawls. The pelagic trawlers performing a directed fishery for either sprat or herring have a very variable degree of mixing in the catches of sprat and herring. The degree of mixing varies on a spatial scale (Figure 15). According to logbooks and sales slips, the mixing can vary between < 5% and 40% although these percentages are not quantifiable at this stage. Given that the information available on the mixing in the directed single-species pelagic fishery is based on logbooks and sales slips and thus on a trip basis, the actual mixing in the individual hauls is at present unknown. The directed herring fishery close to Bornholm in subdivisions 23–25 is reported to have less sprat in the catches than further north in the Baltic (subdivisions 27–29). Mixing of herring and sprat in the directed herring trawl fishery is highest in Subdivision 32, decreasing further north in subdivisions 30–31. The vast majority of the total herring landings in subdivisions 30–31 are not for human consumption and these landings tend to be mixed. The majority of the landings in the directed herring trawl fishery are for human consumption, but there are also landings for industrial purposes. Herring is caught as a bycatch in the directed sprat fishery, which mainly takes place in the central part of the Baltic. Landings in this fishery are mainly for industrial purposes, but there are also landings for human consumption. The directed sprat fishery shows the same spatial variation in mixture of herring and sprat as the directed herring fishery. However, a low spatial overlap of the directed herring and sprat fishery has been reported. 
+<br>
+
+```{r out.width = "100%", echo=FALSE}
+knitr::include_graphics("report/2020_Bts_FO_Figure15.png")
+```
+
+**Figure 15** Spatial variation in reported mixing of herring and sprat in trawl fishery in the Baltic. Darker colour indicates higher mixing. 
+<br>
+
+<a href="report/2020_Bts_FO_Figure15.png" download>Download image</a>
+<br>
+
+The species composition in trawl hauls in these directed fisheries is also reported to vary on a seasonal scale. Reporting from sales slips and logbooks show that there are higher concentrations of sprat in the directed herring trawl fishery in the 1st and the 4th year quarters, in particular in the northern Baltic Sea; the 1st and 4th quarters are also the main fishing seasons.
+The coastal fisheries with smaller vessels targeting herring with gillnets and trapnets have a low degree of actual mixing in the catches and are predominantly clean herring fisheries with less than 5% mixing of sprat in the catches. If sprat is caught as bycatch, mixing is less than 5%.
+
+In addition to the directed single-species pelagic fishery there is a small-meshed fishery for industrial purposes which has quite a high degree of mixing of herring and sprat.
+
+Cod and flounder account for the highest landings of demersal species in the Baltic. The majority of the landings are made with demersal trawls, but there are also significant landings with gillnets. The otter trawlers and gillnetters also land other demersal species: dab, plaice, and whiting.
+
+No mixed-fisheries advice has been developed yet for the Baltic Sea.
+
+<br>
+
+# Species interaction
+
+The major considerations for the Baltic Sea cover the eastern cod stock, the central herring stock, and the sprat stock. Eastern Baltic cod is a predator on herring, sprat, and juvenile cod (Figure 16). This predation by cod forms the main interactions among these stocks.
+<br>
+
+```{r out.width = "100%", echo=FALSE}
+knitr::include_graphics("report/2020_Bts_FO_Figure16.png")
+```
+
+
+**Figure 16** The main Baltic Sea foodweb.
+<br>
+<a href="report/2020_Bts_FO_Figure16.png" download>Download image</a>
+<br>
+
+In the Baltic, multispecies analyses indicate that trade-offs exist between fishing on cod or herring and sprat. Increased fishing pressure on cod may increase the risk of a low cod stock size, thereby reducing cod predation on sprat and herring and allowing great survival and growth in these two prey species. Increased fishing pressure on herring and sprat may have a negative impact on the condition and growth of cod (by reducing the forage available for cod) and result in lower cod yields. The magnitude of the interaction between the species depends on the spatial and temporal overlap among the three stocks.
+Differences in the distributions of cod and herring and sprat imply that an increase in eastern cod landings will not necessarily result in a major increase in herring and sprat stock sizes (and hence catching opportunities). A reduction of herring and sprat landings in the central Baltic Sea is likely to have a positive impact on growth and condition of cod, and perhaps also reduce cod cannibalism. An increase in herring and sprat landings in the northeastern Baltic areas (subdivisions 27–32) is unlikely to negatively affect the eastern cod stock but may have a positive impact on the growth rates of herring and sprat.
+There are other important species interactions. The thiamine deficiency syndrome M74 is a reproductive disorder, which causes mortality among yolk-sac fry of Baltic salmon. The development of M74 is caused by a deficiency of thiamine in the salmon eggs that, in turn, is suggested to be coupled to an abundant but unbalanced fish diet with too low a concentration of thiamine in relation to fat and energy content. The intake of thiamine for Baltic salmon in relation to energy and fat remains lowest by eating young clupeids, especially young sprat, and the total biomass of sprat in the Baltic main basin and salmon growth are positively correlated. A large sprat stock may have a positive impact on salmon growth but may also increase M74 and thereby mortality of Baltic salmon fry.
+<br>
+
+# Effects of fisheries on the ecosystem
+
+Abrasion of the seabed by mobile bottom-contacting fishing gears has been investigated to describe the extent, magnitude, and effects of fishing on benthic habitats. Mobile bottom-contacting gears are primarily used in the southern areas of the Baltic Sea (Figure 17). This is mainly abrasion from otter trawls targeting demersal and benthic fish. Abrasion may affect the surface (top 2 cm of sediments) or the subsurface (> 2 cm).
+<br>
+```{r out.width = "50%", echo=FALSE}
+knitr::include_graphics("report/2020_Bts_FO_VMS_sarA.png")
+```
+
+<a href="report/2020_Bts_FO_VMS_sarA.png" download>Download image</a>
+
+```{r out.width = "50%", echo=FALSE}
+knitr::include_graphics("report/2020_Bts_FO_VMS_sarB.png")
+```
+
+<a href="report/2020_Bts_FO_VMS_sarB.png" download>Download image</a>
+
+**Figure 17** Average annual surface (left) and subsurface (right) disturbance by mobile bottom-contacting fishing gear (bottom otter trawls, bottom seines, beam trawls) in the Baltic Sea during 2014–2017, expressed as average swept-area ratios (SAR). No data from Russia are included as none were supplied.
+<br>
+
+
+Fishing gear disturbances of bottom substrates inflict damage to benthic communities, but little is known at the regional scale about the sensitivity of different Baltic Sea organisms and communities to these fishery-induced impacts. A qualitative approach to address this was elaborated by ICES in 2016. A mechanistic, quantitative assessment procedure based on biological principles is now under development. These approaches would be improved with further research and evidence to better parameterize models, as well as by establishing better quantitative links to other pressures (e.g. anoxia). Secondary effects of bottom trawling include smothering and resuspension of sediment and nutrients, as well as foodweb effects, but these are difficult to evaluate compared to primary effects.
+
+All fisheries have the potential to catch protected, endangered, or threatened species, such as seabirds and marine mammals, as non-targeted bycatch. Recording of the catch of seabirds and mammals has been undertaken in some Baltic Sea fisheries, usually where there is perceived risk of such bycatch. Seabirds can become entangled in gillnets or hooked on longlines and consequently drown. Seals can be caught in submersed trapnets and harbour porpoises become entangled in gillnets, leading to the deaths of these animals.
+
+Studies conducted between 1980 and 2005 indicated that at least 76 000 birds, mostly sea ducks, were killed annually in Baltic Sea gillnets. This number may have declined in more recent years, probably due to the decline in sea duck populations. Birds that actively pursue their prey underwater were more susceptible than those that graze on the benthos. For three bird species (greater scaup [Aythya marila], common guillemot [Uria aalge], and long-tailed duck [Clangula hyemalis]), gillnet bycatch could pose a threat.
+
+The only cetacean species to occur regularly in the Baltic Sea is the harbour porpoise (Phocoena phocoena). The Baltic Sea subpopulation has declined in the past 50–100 years. With the most recent estimation at around 500 individuals (95% confidence interval: 80–1091), this subpopulation is listed as critically endangered. The more westerly Belt Sea subpopulation in subdivision 22 has a much higher abundance, estimated at around 40 000 individuals. Dead harbour porpoises exhibiting evidence of gillnet entanglements are found and reported regularly, so it is likely that bycatch in gillnets is adversely affecting this species, specifically the critically endangered Baltic Sea subpopulation.
+
+Abandoned, lost, or otherwise discarded fishing gear (ALDFG) are an unsolved and “silent” problem. Such gear may continuously catch fish, birds, and marine mammals for a long time. It was estimated that 0.1% of nets are lost annually in the Swedish Baltic Sea gillnet fishery. The impact on the environment is not quantified. However, there is information that fishing pressure exerted by lost static nets could range from 20% of its usual net capacity after three months, down to a maximum of 6% after two years. 
+ 
+Fisheries have a large impact on the upper trophic levels of the Baltic ecosystems. In the eastern Baltic, this impact has been shown to cascade down the foodweb, affecting indirectly the lower trophic levels. For example, the reduction of the eastern Baltic cod stock in the late 1980s has favoured the increased biomass of its main fish prey, the zooplanktivorous sprat, and in turn the decrease in the summer biomass of zooplankton in the Baltic proper. This has provoked a decline in the body condition and growth of both sprat and herring. There is further indication that this trophic cascade could also have facilitated the observed increase in phytoplankton biomass and therefore worsened the eutrophication symptoms.
+
+
+# Sources and references
+
+* Dean, M. J., Hoffman, W. S., and Armstrong, M. P. 2012. Disruption of an Atlantic Cod spawning aggregation resulting from the opening of a directed gill-net fishery. North American Journal of Fisheries Management, 32: 124–134.
+* Dean, M. J., Hoffman, W. S., Zemeckis, D. R., and Armstrong, M. P. 2014. Fine-scale diel and gendered-based patterns in behavior of Atlantic cod (Gadus morhua) on a spawning ground in the western Gulf of Maine. ICES Journal of Marine Science, 71(6): 1474–1489. https://doi.org/10.1093/icesjms/fsu040.
+* ICES. 2012. ICES Implementation of Advice for Data-limited Stocks in 2012 in its 2012 Advice. ICES DLS Guidance Report 2012. ICES CM 2012/ACOM:68. 40 pp.
+* ICES. 2013. Request from EU concerning monitoring of bycatch of cetaceans and other protected species. In Report of the ICES Advisory Committee, 2013. ICES Advice 2013, section 1.5.1.1. 4 pp.
+* ICES. 2014. Bycatch of small cetaceans and other marine animals – Review of national reports under Council Regulation (EC) No. 812/2004 and other published documents. In Report of the ICES Advisory Committee, 2014. ICES Advice 2014, section 1.6.1.1. 8 pp.
+* ICES. 2015a. HELCOM request on pressure from fishing activity (based on VMS/logbook data) in the HELCOM area relating to both seafloor integrity and management of HELCOM MPAs. In Report of the ICES Advisory Committee, 2015. ICES Advice 2015, section 8.2.3.2. 24 pp.
+* ICES. 2015b. Bycatch of small cetaceans and other marine animals – Review of national reports under Council Regulation (EC) No. 812/2004 and other published documents. In Report of the ICES Advisory Committee, 2015. ICES Advice 2015, section 1.6.1.1. 5 pp.
+* ICES. 2016a. Bycatch of small cetaceans and other marine animals – review of national reports under Council Regulation (EC) No. 812/2004 and other information. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, section 1.6.1.1. 6 pp.
+* ICES. 2016b. OSPAR request for further development of fishing intensity and pressure mapping. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, section 1.6.6.4. 27 pp.
+* ICES. 2016c. EU request for guidance on how pressure maps of fishing intensity contribute to an assessment of the state of seabed habitats. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, section 1.6.2.4. 5 pp.
+ICES. 2016d. Report of the Workshop on guidance on how pressure maps of fishing intensity contribute to an assessment of the state of seabed habitats (WKFBI), 31 May–1 June 2016, ICES Headquarters, Copenhagen, Denmark. ICES CM 2016/ACOM:46. 108 pp.
+* ICES. 2017. EU request on indicators of the pressure and impact of bottom-contacting fishing gear on the seabed and of trade-offs in the catch and the value of landings. In Report of the ICES Advisory Committee, 2017. ICES Advice 2017, sr.2017.13. 29 pp.
+* ICES. 2019. Baltic Sea Ecoregion – Fisheries overview data. https://doi.org/10.17895/ices.data.5565 
+* Zemeckis, D. R., Dean, M. J., and Cadrin, S. X. 2014. Spawning Dynamics and Associated Management Implications for Atlantic Cod. North American Journal of Fisheries Management, 34: 424–442.
+
+
+# Annex
+
+
+
+
