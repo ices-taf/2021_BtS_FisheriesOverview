@@ -63,9 +63,9 @@ The commercial fisheries in the Baltic Sea target only a few stocks. The pelagic
 
 The Baltic Sea is a shallow, semi-enclosed, brackish sea, characterised by vertical stratification of the water column (Figure 1). Salty, well oxygenated water from the North Sea occasionally enters the Baltic Sea through the Belt Seas and propagates into the deeper areas, while freshwater flows exit at the surface. Stratification limits the oxygen from reaching the deeper waters and hence the oxygen content of the bottom water depends on surface oxygen consumption and the inflows of North Sea water. Due to these hydrological characteristics, the basin has a limited diversity of fish species, dominated by marine species in the southwestern areas and a combination of marine and freshwater species in the northeastern areas. Fisheries in the Baltic Sea are focused on a few major species.
 
-
 ```{r  out.width = "100%", echo=FALSE}
 knitr::include_graphics("report/2020_BtS_FO_Map.png")
+
 ```
 
 **Figure 1**  The Baltic Sea ecoregion (highlighted in yellow). ICES Subdivision 23 is usually defined as part of the Greater North Sea ecoregion, but to be consistent with the current fisheries management regime, it is included in this overview.
@@ -471,46 +471,6 @@ kable(dat, "html")%>%
 
 Discards for pelagic species in the Baltic Sea are very low, as both sprat and herring are target species (Figure 7) and other bycatch (e.g. of sticklebacks) is also landed. The discard rates are minor for static coastal gears and even lower for pelagic trawls. A rise in benthic discard rates in 2014 is due to the inclusion of flounder stocks in the evaluation, which significantly increased the number of stocks assessed for discards (from four to seven stocks). Demersal discards show a nominal overall decrease in 2015 because of the obligation to land all commercial catches of cod, salmon, herring, and sprat in the Baltic Sea that came into force in 2015. Release rates for species targeted by recreational fisheries are available for most target species and are high, but vary between years and countries. Post-release mortality estimates are available only for some species; further studies are needed.
 
-<table style="table-layout: fixed;width: 100%;">
-<tr>
-<td>
-```{r discards_trends, echo=FALSE, fig.height=4.5, fig.width=, message=FALSE, warning=FALSE}
-# wrong, need to check data
-library(plotly)
-library(tidyr)
-dat <- read.csv("report/2020_BtS_FO_SAG_Discards_current.csv")
-names <- unique(dat$type_var)
-dat <- spread(dat, variable, value)
-p <- plot_ly(data = dat,
-         x = ~FisheriesGuild)%>%
-        add_trace(y=~guildLandings, name = 'Landings')%>%
-        add_trace(y= ~guildDiscards, name = 'Discards')%>%
-        layout(yaxis = list(title = 'Thousand tonnes)'), barmode = 'stack') 
-
-p
-
-```
-</td>
-<td>
-```{r discard_current, eval=FALSE, fig.height=4.5, fig.width=, message=FALSE, warning=FALSE, include=FALSE}
-library(plotly)
-library(tidyr)
-dat <- read.csv("report/2020_BtS_FO_SAG_Discards_current.csv")
-names <- unique(dat$type_var)
-dat <- spread(dat, variable, value)
-p <- plot_ly(data = dat,
-         x = ~FisheriesGuild)%>%
-        add_trace(y=~guildLandings, name = 'Landings')%>%
-        add_trace(y= ~guildDiscards, name = 'Discards')%>%
-        layout(yaxis = list(title = 'Thousand tonnes)'), barmode = 'stack') 
-
-p
-
-```
-</td>
-</tr>
-</table>
-
 <br>
 
 **Figure 7** Left panel (a): Discard rates in 2013–2017 by fish category, shown as percentages (%) of the total annual catch in that category. Right panel (b): Landings (green) and discards (orange) in 2019 by fish category (in thousand tonnes).
@@ -694,24 +654,28 @@ STECF also evaluated a number of technical measures, including gear limitations 
 Fishing mortalities and spawning stock sizes have been evaluated against maximum sustainable yield (MSY) and precautionary approach (PA) reference points, and the status of these stocks has also been assessed relative to safe biological limits. A small majority of the Baltic stocks that are analytically assessed (ICES stock data category 1) are fished at rates at or above FMSY (Figure 10), also according to the Marine Strategy Framework Directive (MSFD) D3C1 and the Good Environmental Status (GES) boundaries. However, most of the stocks are fished within the D3C2 boundaries that considers the reproductive capacity of the stocks (Figure 11). There are some stocks for which fishing pressure and stock size reference points are not yet available. The MSFD descriptors show that the majority of the landings are from stocks with full reproductive capacity, which is largely driven by landings of sprat and herring in subdivisions 25–29 and 32, excluding the Gulf of Riga (Figure 11). Overall fishing mortality (F) for benthic and pelagic fish stocks has reduced since the early 2000s (Figure 12). A number of stocks are currently being exploited above FMSY, namely eastern and western cod, herring stocks in the central and in the western Baltic, as well as sprat in the Baltic Sea, plaice (Pleuronectes platessa) in subdivisions 21–23, and sole (Solea solea) in subdivisions 20–24. Annex 1 contains a full list of the stocks included in these figures.
 
 <br>
-```{r icesPies, eval=FALSE, fig.height=4.5, fig.width=, message=FALSE, warning=FALSE, include=FALSE}
+```{r icesPies, echo=FALSE, fig.height=4.5, fig.width=8, message=FALSE, warning=FALSE}
 library(plotly)
 library(ggplot2)
 library(dplyr)
 library(tidyr)
 df <- read.csv("report/2020_BtS_FO_SAG_ICESpies.csv")
 
-benthic <- df%>% filter(FisheriesGuild == "Benthic")
+benthic <- df%>% filter(FisheriesGuild == "benthic")
 benthic <- spread(benthic, header, value)
+# benthic <- benthic[,-1]
 colnames(benthic) <- c("X","FisheriesGuild","lineDescription","Variable",             "colour" ,"sum" ,"fraction","FishingPressureMSY", "FishingPressurePA", "SBL",                "StockSizeMSY","StockSizePA")
-pelagic <- df%>% filter(FisheriesGuild == "Pelagic")
+pelagic <- df%>% filter(FisheriesGuild == "pelagic")
 pelagic <- spread(pelagic, header, value)
+# pelagic <- pelagic[,-1]
 colnames(pelagic) <- c("X","FisheriesGuild","lineDescription","Variable",             "colour" ,"sum" ,"fraction","FishingPressureMSY", "FishingPressurePA", "SBL",                "StockSizeMSY","StockSizePA")
-demersal <- df%>% filter(FisheriesGuild == "Demersal")
+demersal <- df%>% filter(FisheriesGuild == "demersal")
 demersal <- spread(demersal, header, value)
+# demersal <- demersal[,-1]
 colnames(demersal) <- c("X","FisheriesGuild","lineDescription","Variable",             "colour" ,"sum" ,"fraction","FishingPressureMSY", "FishingPressurePA", "SBL",                "StockSizeMSY","StockSizePA")
 total <- df%>% filter(FisheriesGuild == "total")
 total <- spread(total, header, value)
+# total <- total[,-1]
 colnames(total) <- c("X","FisheriesGuild","lineDescription","Variable",             "colour" ,"sum" ,"fraction","FishingPressureMSY", "FishingPressurePA", "SBL",                "StockSizeMSY","StockSizePA")
 
 
@@ -752,12 +716,6 @@ p <- plot_ly() %>%
          grid=list(rows=4, columns=5),
          xaxis = list(showgrid = TRUE, zeroline = FALSE, showticklabels = TRUE),
          yaxis = list(showgrid = TRUE, zeroline = FALSE, showticklabels = TRUE))
-# ,annotations = list(
-#  list(x = 0.05 , y = 1.1, text = "FishingPressure \nMSY", showarrow = F, xref='paper', yref='paper'),
-#   list(x = 0.25 , y = 1.1, text = "FishingPressure \nPA", showarrow = F, xref='paper', yref='paper'),
-#  list(x = 0.5 , y = 1.1, text = "StockSize \nMSY", showarrow = F, xref='paper', yref='paper'),
-#  list(x = 0.73 , y = 1.1, text = "StockSize \nPA", showarrow = F, xref='paper', yref='paper'),
-#  list(x = 0.92 , y = 1.1, text = "SBL", showarrow = F, xref='paper', yref='paper')))
 
 p
 
