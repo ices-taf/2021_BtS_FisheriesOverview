@@ -17,11 +17,11 @@ catch_trends <- read.taf("model/catch_trends.csv")
 clean_status <- read.taf("data/clean_status.csv")
 
 #set year and month for captions:
-cap_month = "August"
-cap_year = "2020"
+cap_month = "October"
+cap_year = "2021"
 # set year for plot claculations
 
-year = 2020
+year = 2021
 
 
 ###########
@@ -32,6 +32,10 @@ year = 2020
 # A. Trends by guild
 #~~~~~~~~~~~~~~~#
 # 1. Demersal
+
+## ADRI, check why cod.27.24-32 does not show up in the graph but it does in the legend and in the trends df
+#check with Sarah if it has to be there, as it has no ref points. In that case should not show up in the legend
+# neither
 #~~~~~~~~~~~
 plot_stock_trends(trends, guild="demersal", cap_year, cap_month , return_data = FALSE)
 ggplot2::ggsave(paste0(year_cap, "_", ecoreg,"_FO_SAG_Trends_demersal.png"), path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
@@ -102,7 +106,7 @@ kobe <- plot_kobe(catch_current, guild = "demersal", caption = TRUE, cap_year , 
 #kobe_dat <- plot_kobe(catch_current, guild = "Demersal", caption = T, cap_year , cap_month , return_data = TRUE)
 
 #Check this file name
-png("report/2020_BtS_FO_SAG_Current_demersal.png",
+png("report/2021_BtS_FO_SAG_Current_demersal.png",
     width = 131.32,
     height = 88.9,
     units = "mm",
@@ -121,7 +125,7 @@ write.taf(bar_dat, file =paste0(year_cap, "_", ecoreg, "_FO_SAG_Current_pelagic.
 
 kobe <- plot_kobe(catch_current, guild = "pelagic", caption = TRUE, cap_year , cap_month , return_data = FALSE)
 #check this file name
-png("report/2020_BtS_FO_SAG_Current_pelagic.png",
+png("report/2021_BtS_FO_SAG_Current_pelagic.png",
     width = 131.32,
     height = 88.9,
     units = "mm",
@@ -134,7 +138,8 @@ dev.off()
 
 # 3. Benthic
 #~~~~~~~~~~~
-catch_current$Status[which(catch_current$StockKeyLabel == "sol.27.20-24")] <- "GREEN"
+# not done in 2021, check with Sarah
+# catch_current$Status[which(catch_current$StockKeyLabel == "sol.27.20-24")] <- "GREEN"
 
 bar <- plot_CLD_bar(catch_current, guild = "benthic", caption = TRUE, cap_year , cap_month , return_data = FALSE)
 
@@ -143,7 +148,7 @@ write.taf(bar_dat, file =paste0(year_cap, "_", ecoreg, "_FO_SAG_Current_benthic.
 
 kobe <- plot_kobe(catch_current, guild = "benthic", caption = TRUE, cap_year , cap_month , return_data = FALSE)
 #check this file name
-png("report/2020_BtS_FO_SAG_Current_benthic.png",
+png("report/2021_BtS_FO_SAG_Current_benthic.png",
     width = 131.32,
     height = 88.9,
     units = "mm",
@@ -163,7 +168,7 @@ write.taf(bar_dat, file =paste0(year_cap, "_", ecoreg, "_FO_SAG_Current_All.csv"
 
 kobe <- plot_kobe(catch_current, guild = "All", caption = TRUE, cap_year, cap_month , return_data = FALSE)
 #check this file name
-png("report/2020_BtS_FO_SAG_Current_All.png",
+png("report/2021_BtS_FO_SAG_Current_All.png",
     width = 131.32,
     height = 88.9,
     units = "mm",
@@ -177,6 +182,8 @@ dev.off()
 #~~~~~~~~~~~~~~~#
 # C. Discards
 #~~~~~~~~~~~~~~~#
+
+# adri review function, missing caption
 discardsA <- plot_discard_trends(catch_trends, year, cap_year, cap_month )
 
 dat <- plot_discard_trends(catch_trends, year, cap_year , cap_month , return_data = TRUE)

@@ -21,7 +21,7 @@ official <- read.taf("bootstrap/data/ICES_nominal_catches/ICES_2006_2017_catches
 prelim <- read.taf("bootstrap/data/ICES_nominal_catches/ICES_preliminary_catches.csv")
 
 catch_dat <-
-  format_catches(2020, "Baltic Sea",
+  format_catches(2021, "Baltic Sea",
     hist, official, prelim, species_list, sid)
 
 write.taf(catch_dat, dir = "data", quote = TRUE)
@@ -93,12 +93,12 @@ effort_BtS <- dplyr::mutate(effort_BtS, gear_class = case_when(
 
 
 # 3: SAG
-sag_sum <- read.taf("bootstrap/data/SAG_data/SAG_summary.csv")
-sag_refpts <- read.taf("bootstrap/data/SAG_data/SAG_refpts.csv")
-sag_status <- read.taf("bootstrap/data/SAG_data/SAG_status.csv")
+sag_sum <- read.taf("SAG_summary.csv")
+sag_refpts <- read.taf("SAG_refpts.csv")
+sag_status <- read.taf("SAG_status.csv")
 
-clean_sag <- format_sag(sag_sum, sag_refpts, 2020, "Baltic")
-clean_status <- format_sag_status(sag_status, 2020, "Baltic Sea")
+clean_sag <- format_sag(sag_sum, sag_refpts, 2021, "Baltic")
+clean_status <- format_sag_status(sag_status, 2021, "Baltic Sea")
 
 # remove some stocks
 Baltic_Out_stocks <-  c("sal.27.32", "sal.27.22-31", "ele.2737.nea", "trs.27.22-32", "her.27.30", "her.27.31")
