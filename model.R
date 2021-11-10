@@ -4,7 +4,7 @@
 
 library(icesTAF)
 library(dplyr)
-taf.library(icesFO)
+library(icesFO)
 
 mkdir("model")
 

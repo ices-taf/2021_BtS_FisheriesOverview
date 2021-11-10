@@ -5,7 +5,14 @@ library(sf)
 library(ggplot2)
 library(dplyr)
 
+## Run utilies
+source("bootstrap/utilities.r")
 
+# set values for automatic naming of files:
+cap_year <- 2021
+cap_month <- "November"
+ecoreg_code <- "BtS"
+ecoreg <- "BtS"
 ##########
 #Load data
 ##########
@@ -17,11 +24,11 @@ catch_trends <- read.taf("model/catch_trends.csv")
 clean_status <- read.taf("data/clean_status.csv")
 
 #set year and month for captions:
-cap_month = "August"
-cap_year = "2020"
+# cap_month = "August"
+# cap_year = "2020"
 # set year for plot claculations
 
-year = 2020
+year = 2021
 
 
 ###########
@@ -223,8 +230,11 @@ write.taf(dat, file = paste0(year_cap,"_",ecoreg, "_FO_SAG_GESpies.csv"),dir ="r
 
 dat <- format_annex_table(clean_status, year)
 
-write.taf(dat, file = paste0(year_cap,"_", ecoreg, "_FO_SAG_annex_table.csv"), dir = "report")
+write.taf(dat, file = file_name(cap_year,ecoreg_code,"SAG_annex_table", ext = "csv"), dir = "report", quote = TRUE)
 
+
+
+html_annex_table(dat, ecoreg_code, cap_year)
 # This annex table has to be edited by hand,
 # For SBL and GES only one values is reported,
 # the one in PA for SBL and the one in MSY for GES
