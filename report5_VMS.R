@@ -1,6 +1,6 @@
 
 library(icesTAF)
-taf.library(icesFO)
+library(icesFO)
 library(sf)
 library(ggplot2)
 library(dplyr)
@@ -32,7 +32,7 @@ sar <- dplyr::select(sar, -WKT)
 # effort <- vms_effort
 #set range of years in plots
 
-year_range = "2018-2021"
+year_range = "2019-2020"
 
 
 ###########
