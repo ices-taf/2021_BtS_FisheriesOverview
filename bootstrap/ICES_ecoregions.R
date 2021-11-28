@@ -1,5 +1,5 @@
 library(icesTAF)
-taf.library(icesFO)
+library(icesFO)
 
 ecoregion <- icesFO::load_ecoregion("Baltic Sea")
 
