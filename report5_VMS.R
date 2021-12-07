@@ -32,7 +32,7 @@ sar <- dplyr::select(sar, -WKT)
 # effort <- vms_effort
 #set range of years in plots
 
-year_range = "2019-2020"
+year_range = "2017-2020"
 
 
 ###########
