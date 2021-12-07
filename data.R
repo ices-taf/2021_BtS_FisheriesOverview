@@ -2,14 +2,14 @@
 # Initial formatting of the data
 
 library(icesTAF)
-taf.library(icesFO)
+library(icesFO)
 library(dplyr)
 
 mkdir("data")
 
 # load species list
-species_list <- read.taf("bootstrap/data/FAO_ASFIS_species/species_list.csv")
-sid <- read.taf("bootstrap/data/ICES_StockInformation/sid.csv")
+species_list <- read.taf("bootstrap/initial/data/FAO_ASFIS_species/species_list.csv")
+sid <- read.taf("bootstrap/initial/data/ICES_StockInformation/sid.csv")
 effort$sub.region <- tolower(effort$sub.region)
 unique(effort$sub.region)
 
@@ -93,12 +93,21 @@ effort_BtS <- dplyr::mutate(effort_BtS, gear_class = case_when(
 
 
 # 3: SAG
+<<<<<<< HEAD
 sag_sum <- read.taf("SAG_summary.csv")
 sag_refpts <- read.taf("SAG_refpts.csv")
 sag_status <- read.taf("SAG_status.csv")
 
 clean_sag <- format_sag(summary, refpts, 2021, "Baltic")
 clean_status <- format_sag_status(status, 2021, "Baltic Sea")
+=======
+sag_sum <- read.taf("bootstrap/initial/data/SAG_data/SAG_summary.csv")
+sag_refpts <- read.taf("bootstrap/initial/data/SAG_data/SAG_refpts.csv")
+sag_status <- read.taf("bootstrap/initial/data/SAG_data/SAG_status.csv")
+
+clean_sag <- format_sag(sag_sum, sag_refpts, 2021, "Baltic Sea")
+clean_status <- format_sag_status(sag_status, 2021, "Baltic Sea")
+>>>>>>> 062694360fddcb889e843bc7289481b87b0edaba
 
 # remove some stocks
 Baltic_Out_stocks <-  c("sal.27.32", "sal.27.22-31", "ele.2737.nea", "trs.27.22-32", "her.27.30", "her.27.31")
