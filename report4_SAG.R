@@ -17,7 +17,7 @@ catch_trends <- read.taf("model/catch_trends.csv")
 clean_status <- read.taf("data/clean_status.csv")
 
 #set year and month for captions:
-cap_month = "October"
+cap_month = "November"
 cap_year = "2021"
 # set year for plot claculations
 
@@ -68,27 +68,29 @@ guild <- read.taf("model/guild.csv")
 # For this EO, they need separate plots with all info
 
 guild2 <- guild %>% filter(Metric == "F_FMSY")
-plot_guild_trends(guild, cap_year = 2019, cap_month = "October",return_data = FALSE )
+plot_guild_trends(guild, cap_year = 2021, cap_month = "November",return_data = FALSE )
 ggplot2::ggsave("2019_BtS_EO_GuildTrends.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
 guild2 <- guild2 %>% filter(FisheriesGuild != "MEAN")
-plot_guild_trends(guild2, cap_year = 2019, cap_month = "November",return_data = FALSE )
-ggplot2::ggsave("2019_BtS_EO_GuildTrends_noMEAN_F.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
+guild2 <- guild2 %>% filter(Year> 1970)
+plot_guild_trends(guild2, cap_year = 2021, cap_month = "November",return_data = FALSE )
+ggplot2::ggsave("2021_BtS_EO_GuildTrends_noMEAN_F.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
 
 guild2 <- guild %>% filter(Metric == "SSB_MSYBtrigger")
 guild3 <- guild2 %>% dplyr::filter(FisheriesGuild != "MEAN")
-plot_guild_trends(guild3, cap_year = 2019, cap_month = "November",return_data = FALSE )
-ggplot2::ggsave("2019_BtS_EO_GuildTrends_short_noMEAN_SSB.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
+guild3 <- guild3 %>% filter(Year> 1970)
+plot_guild_trends(guild3, cap_year = 2021, cap_month = "November",return_data = FALSE )
+ggplot2::ggsave("2021_BtS_EO_GuildTrends_short_noMEAN_SSB.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
 
 
-dat <- plot_guild_trends(guild, cap_year = 2019, cap_month = "October",return_data = TRUE)
-write.taf(dat, file ="2019_BtS_EO_GuildTrends.csv", dir = "report", quote = TRUE)
+dat <- plot_guild_trends(guild, cap_year = 2021, cap_month = "November",return_data = TRUE)
+write.taf(dat, file ="2021_BtS_EO_GuildTrends.csv", dir = "report", quote = TRUE)
 
 dat <- trends[,1:2]
 dat <- unique(dat)
 dat <- dat %>% filter(StockKeyLabel != "MEAN")
 dat2 <- sid %>% select(c(StockKeyLabel, StockKeyDescription))
 dat <- left_join(dat,dat2)
-write.taf(dat, file ="2019_BtS_EO_SpeciesGuild_list.csv", dir = "report", quote = TRUE)
+write.taf(dat, file ="2021_BtS_EO_SpeciesGuild_list.csv", dir = "report", quote = TRUE)
 
 #~~~~~~~~~~~~~~~#
 # B.Current catches
@@ -190,9 +192,10 @@ dat <- plot_discard_trends(catch_trends, year, cap_year , cap_month , return_dat
 write.taf(dat, file =paste0(year_cap, "_", ecoreg, "_FO_SAG_Discards_trends.csv"), dir = "report" )
 
 catch_trends2 <- catch_trends %>% filter(discards > 0)
+df5 <- df %>% filter(discards >0)
 discardsB <- plot_discard_current(catch_trends2, year,position_letter = "b)", cap_year , cap_month , caption = FALSE)
 
-discardsC <- plot_discard_current(catch_trends, year,position_letter = "c)", cap_year , cap_month )
+discardsC <- plot_discard_current(catch_trends, year,position_letter = "c)", cap_year , cap_month , caption = TRUE )
 
 #Need to change order?
 dat <- plot_discard_current(catch_trends, year, cap_year, cap_month , return_data = TRUE)

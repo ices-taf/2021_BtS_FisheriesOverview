@@ -7,9 +7,9 @@ hist <- load_historical_catches()
 write.taf(hist, file = "ICES_historical_catches.csv", quote = TRUE)
 
 official <- load_official_catches()
-write.taf(official, file = "ICES_2006_2018_catches.csv", quote = TRUE)
+write.taf(official, file = "ICES_2006_2019_catches.csv", quote = TRUE)
 
-prelim <- load_preliminary_catches(2019)
+prelim <- load_preliminary_catches(2020)
 write.taf(preliminary, file = "ICES_preliminary_catches.csv", quote = TRUE)
 
 

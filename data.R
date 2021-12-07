@@ -97,8 +97,8 @@ sag_sum <- read.taf("SAG_summary.csv")
 sag_refpts <- read.taf("SAG_refpts.csv")
 sag_status <- read.taf("SAG_status.csv")
 
-clean_sag <- format_sag(sag_sum, sag_refpts, 2021, "Baltic")
-clean_status <- format_sag_status(sag_status, 2021, "Baltic Sea")
+clean_sag <- format_sag(summary, refpts, 2021, "Baltic")
+clean_status <- format_sag_status(status, 2021, "Baltic Sea")
 
 # remove some stocks
 Baltic_Out_stocks <-  c("sal.27.32", "sal.27.22-31", "ele.2737.nea", "trs.27.22-32", "her.27.30", "her.27.31")
