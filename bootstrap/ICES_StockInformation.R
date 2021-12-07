@@ -1,6 +1,6 @@
 
 library(icesTAF)
-taf.library(icesFO)
+library(icesFO)
 
 sid <- load_sid(2021)
 
