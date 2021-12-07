@@ -49,15 +49,10 @@ year = 2021
 #check with Sarah if it has to be there, as it has no ref points. In that case should not show up in the legend
 # neither
 #~~~~~~~~~~~
-# test_cod <- trends %>% filter(FisheriesGuild =="demersal")
-# test_cod_2 <- subset(test_cod, StockKeyLabel!="cod.27.22-24" & Year!= 2021 & Metric!="F_FMSY")
-# trends1 <- test_cod[!test_cod$StockKeyLabel == "cod.27.22-24" & test_cod$Year == 2021 & test_cod$Metric == "F_FMSY"]
-# test_cod_2 <- test_cod %>% slice(-c(74))
-
-plot_stock_trends(test_cod_2, guild="demersal", cap_year, cap_month , return_data = FALSE)
+plot_stock_trends(trends, guild="demersal", cap_year, cap_month , return_data = FALSE)
 ggplot2::ggsave(file_name(cap_year,ecoreg_code,"SAG_Trends_demersal", ext = "png"), path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
 
-dat <- plot_stock_trends(test_cod_2, guild="demersal", cap_year , cap_month, return_data = TRUE)
+dat <- plot_stock_trends(trends, guild="demersal", cap_year , cap_month, return_data = TRUE)
 write.taf(dat, file =file_name(cap_year,ecoreg_code,"SAG_Trends_demersal", ext = "csv"), dir = "report")
 
 # 2. Pelagic
